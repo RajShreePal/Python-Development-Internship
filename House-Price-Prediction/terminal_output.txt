@@ -1,0 +1,78 @@
+First 5 rows (selected columns):
+   Id Neighborhood  GrLivArea  OverallQual  SalePrice
+0   1      CollgCr       1710            7     208500
+1   2      Veenker       1262            6     181500
+2   3      CollgCr       1786            7     223500
+3   4      Crawfor       1717            7     140000
+4   5      NoRidge       2198            8     250000
+
+Dataset shape: 1460 rows, 81 columns
+Target column: SalePrice
+Numerical columns: 38
+Categorical columns: 43
+
+Column names:
+['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'Alley', 'LotShape', 'LandContour', 'Utilities', 'LotConfig', 'LandSlope', 'Neighborhood', 'Condition1', 'Condition2', 'BldgType', 'HouseStyle', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'MasVnrType', 'MasVnrArea', 'ExterQual', 'ExterCond', 'Foundation', 'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinSF1', 'BsmtFinType2', 'BsmtFinSF2', 'BsmtUnfSF', 'TotalBsmtSF', 'Heating', 'HeatingQC', 'CentralAir', 'Electrical', '1stFlrSF', '2ndFlrSF', 'LowQualFinSF', 'GrLivArea', 'BsmtFullBath', 'BsmtHalfBath', 'FullBath', 'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'KitchenQual', 'TotRmsAbvGrd', 'Functional', 'Fireplaces', 'FireplaceQu', 'GarageType', 'GarageYrBlt', 'GarageFinish', 'GarageCars', 'GarageArea', 'GarageQual', 'GarageCond', 'PavedDrive', 'WoodDeckSF', 'OpenPorchSF', 'EnclosedPorch', '3SsnPorch', 'ScreenPorch', 'PoolArea', 'PoolQC', 'Fence', 'MiscFeature', 'MiscVal', 'MoSold', 'YrSold', 'SaleType', 'SaleCondition', 'SalePrice']
+
+Data types (count per type):
+str        43
+int64      35
+float64     3
+Name: count, dtype: int64
+
+Columns with missing values: 19
+PoolQC          1453
+MiscFeature     1406
+Alley           1369
+Fence           1179
+MasVnrType       872
+FireplaceQu      690
+LotFrontage      259
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+BsmtExposure      38
+BsmtFinType2      38
+BsmtQual          37
+BsmtCond          37
+BsmtFinType1      37
+MasVnrArea         8
+Electrical         1
+dtype: int64
+
+Statistics for SalePrice:
+count      1460.000000
+mean     180921.195890
+std       79442.502883
+min       34900.000000
+25%      129975.000000
+50%      163000.000000
+75%      214000.000000
+max      755000.000000
+Name: SalePrice, dtype: float64
+
+Features after encoding: 43 columns, 1460 rows
+Missing values left in X: 0
+Training rows: 1168, Testing rows: 292
+
+Model Evaluation
+----------------
+Mean Absolute Error: 20,943.58
+Mean Squared Error: 1,139,266,116.39
+Root Mean Squared Error: 33,753.02
+R² Score: 0.8515
+
+Sample Predictions (test data)
+   Actual Price   Predicted Price
+        154,500           136,906
+        325,000           324,316
+        115,000           117,317
+        159,000           178,128
+        315,500           305,138
+         75,500            75,282
+        311,500           233,068
+        146,000           143,529
+
+Charts saved in the 'outputs' folder.
